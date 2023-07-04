@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td><label for="tn">Topic_name</label></td>
+                <td><input type="text" name="tn" id="tn"></td>
+            </tr>
+            <tr>
+                <td><label for="wn">Name</label></td>
+                <td><input type="text" name="wn" id="wn"></td>
+            </tr>
+            <tr>
+                <td><label for="da">Date</label></td>
+                <td><input type="text" name="da" id="da"></td>
+            </tr>
+            <tr>
+                <td><label for="au">Author</label></td>
+                <td><input type="text" name="au" id="au"></td>
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
